@@ -1,0 +1,22 @@
+source('~/ProgrammingAssignment2/ProgrammingAssignment2/cachematrix.R')
+my_matrix <- makeCacheMatrix(matrix(3:6, 2, 2))
+my_matrix$get()
+     [,1] [,2]
+[1,]    3    5
+[2,]    4    6
+my_matrix$getInverse()
+NULL
+cacheSolve(my_matrix)
+     [,1] [,2]
+[1,]   -3  2.5
+[2,]    2 -1.5
+my_matrix$set(matrix(c(4, 3, 7, 9), 2, 2))
+my_matrix$get()
+     [,1] [,2]
+[1,]    4    7
+[2,]    3    9
+cacheSolve(my_matrix)
+getting cached data
+     [,1]       [,2]
+[1,]  0.6 -0.4666667
+[2,] -0.2  0.2666667
